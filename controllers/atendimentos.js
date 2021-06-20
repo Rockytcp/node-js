@@ -8,6 +8,5 @@ module.exports = app => {
     app.post("/atendimentos", (req, res) => {
         const atendimento = req.body
         
-        Atendimento.adciona(atendimento)
-        res.send("Post atendimento")})
+        Atendimento.adciona(atendimento, res)})
 }
